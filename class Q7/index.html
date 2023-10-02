@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #pass {
+        display: block;
+        margin: auto;
+        margin-top: 10rem;
+        width: 25rem;
+        height: 3rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 3rem;
+        display:  none;
+      }
+    </style>
+  </head>
+  <body>
+    <input  onkeyup="isShiftUp(event)" onkeydown="isShiftDown(event)"  type="text" id="pass" />
+    <p>Caps on!</p>
+    <script>
+      //Q- Write a script which keeps checking the password being entered.
+      //It should check if capslock is on or off
+      //if its on it should not allow to type and show "caps on" on screen,
+      // also it should only allow to type if the shift in pressed down.
+      const input = document.querySelector("input");
+      const p = document.querySelector("p");
+  
+  
+      function isCapsOn(){
+        if(p.innerText == "Caps on!"){
+            return true;
+        }else{
+            return false;
+        }
+      };
+       
+   
+     function isShiftDown (e){
+
+        if(e.key == "Shift"){
+            p.innerText  = "Caps off!";
+        }
+
+        if(isCapsOn()){
+            input.readOnly = true;
+        }else{
+            input.readOnly = false;
+        } 
+
+     }
+
+     function isShiftUp(e){
+        if(e.key == "Shift"){
+            p.innerText = "Caps on!"
+        }
+
+     };
+     
+     const obj = {
+       name  : "ajay",
+       printname : null,
+       fullName : function (){
+        this.printname = ()=>{
+           console.log(this.name);
+        } 
+       }
+     }
+     
+     obj.fullName();
+     
+   
+    </script>
+  </body>
+</html>

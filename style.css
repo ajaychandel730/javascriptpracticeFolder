@@ -1,0 +1,49 @@
+
+
+
+body{
+ display : flex;
+ align-items: start;
+ justify-content: center;
+ height: 100vh;
+}
+
+.container{
+    width:  400px;
+    border : 2px solid gray;
+    display:  flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+.question_icon{
+    padding: 0px 4px;
+}
+
+.question_wrapper{
+    display : flex;
+    border: 2px solid black;
+    padding: 4px;
+}
+.qustion_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.question{
+    margin:  0;
+    cursor: pointer;
+}
+
+.hide{
+    display : none;
+}
+
+.show{
+    display : initial;
+}
+
+.answer{
+    color : gray;
+    margin: .5rem 0;
+}

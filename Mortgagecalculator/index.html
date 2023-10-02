@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mortage calculator</title>
+  </head>
+  <body>
+    <form class="container">
+      <div class="input_wrapper">
+        <label for="principal_amount">Principal loan amount</label>
+        <div class="input_text">
+          <input class="input" type="text" id="principal_amount" />
+        </div>
+      </div>
+
+      <div class="input_wrapper">
+        <label for="inerest_rate">Inerest rate</label>
+        <div class="input_text">
+          <input class="input" type="text" id="inerest_rate" />
+          <span>%</span>
+        </div>
+      </div>
+
+      <div class="input_wrapper">
+        <label for="loan_length">Length of loan</label>
+        <div class="input_text">
+          <input class="input" type="text" id="loan_length" min="1"/>
+          <span>years</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Calculate</button>
+       <span class="result">your monthly mortgage will be $0</span>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

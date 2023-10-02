@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid black;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.input{
+    padding: 4px;
+}
+
+.input_text{
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+    gap: 4px;
+    justify-content: start;
+}
+
+
+.btn{
+    padding: 4px 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: initial;
+}

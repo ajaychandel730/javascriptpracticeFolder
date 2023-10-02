@@ -1,0 +1,46 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    width: 500px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.time_text{
+    width: 50px;
+    padding: 4px 8px;
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+

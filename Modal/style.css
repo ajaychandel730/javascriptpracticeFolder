@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width : 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.btn{
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none !important;
+}
+
+.overlay{
+      position: fixed;
+      inset: 0;
+      background-color: #00000078;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.dialog{
+    position: relative;
+    background: white;
+    height: 400px;
+    min-width: 400px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.dialog_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.close_icon{
+position: absolute;
+ top: 4%;
+ left : 4%;
+}
